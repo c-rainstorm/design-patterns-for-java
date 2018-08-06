@@ -15,7 +15,9 @@
 - [单例模式](#单例模式)
     - [经典实现](#经典实现)
     - [应用场景](#应用场景)
-    - [个人实践](#个人实践)
+- [工厂方法模式](#工厂方法模式)
+    - [经典实现](#经典实现-1)
+    - [应用场景](#应用场景-1)
 - [参考](#参考)
 
 <!-- /TOC -->
@@ -44,7 +46,18 @@
 1. [java.lang.Runtime#getRuntime()](https://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getRuntime%28%29)
 1. [java.lang.System#getSecurityManager()](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#getSecurityManager--)
 
-### 个人实践
+## 工厂方法模式
+
+### 经典实现
+
+1. [完整工厂方法模式](./src/main/java/me/rainstorm/patterns/factory/ConcreteFactory.java)
+1. [简单工厂方法模式](./src/main/java/me/rainstorm/patterns/factory/SimpleFactory.java)
+1. [延迟加载的工厂类](./src/main/java/me/rainstorm/patterns/factory/LazyLoadFactory.java)
+
+### 应用场景
+
+1. [java.util.Calendar.getInstance()](http://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance--)
+1. [java.nio.charset.Charset.forName()](https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html#forName-java.lang.String-)
 
 ## 参考
 
