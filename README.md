@@ -18,6 +18,9 @@
 - [工厂方法模式](#工厂方法模式)
     - [经典实现](#经典实现-1)
     - [应用场景](#应用场景-1)
+- [模板方法模式](#模板方法模式)
+    - [经典实现](#经典实现-2)
+    - [应用场景](#应用场景-2)
 - [参考](#参考)
 
 <!-- /TOC -->
@@ -58,6 +61,23 @@
 
 1. [java.util.Calendar.getInstance()](http://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance--)
 1. [java.nio.charset.Charset.forName()](https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html#forName-java.lang.String-)
+
+## 模板方法模式
+
+### 经典实现
+
+1. [经典模板方法实现](./src/main/java/me/rainstorm/patterns/template/AbstractClass.java)
+1. [带 Hook 的模板方法实现](./src/main/java/me/rainstorm/patterns/template/AbstractClassWithHook.java)
+
+### 应用场景
+
+经典的应用场景：
+
+1. 子类中的公共部分实现可以抽取出来放到父类中，对新手不太友好，但是抽象程度可以，实现比较简洁
+
+真实世界的用例：
+
+1. [org.apache.catalina.util.LifecycleBase#start()](https://tomcat.apache.org/tomcat-8.0-doc/api/org/apache/catalina/util/LifecycleBase.html#start()) + [org.apache.catalina.core.StandardContext#startInternal()](https://tomcat.apache.org/tomcat-8.0-doc/api/org/apache/catalina/core/StandardContext.htmlstartInternal())
 
 ## 参考
 
