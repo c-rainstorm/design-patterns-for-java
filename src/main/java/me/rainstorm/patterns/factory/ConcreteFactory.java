@@ -4,8 +4,6 @@ import me.rainstorm.patterns.factory.entity.ConcreteProduct1;
 import me.rainstorm.patterns.factory.entity.Product;
 
 import java.lang.reflect.InvocationTargetException;
-import java.nio.charset.Charset;
-import java.util.Calendar;
 
 /**
  * @author baochen1.zhang
