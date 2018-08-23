@@ -21,6 +21,9 @@
 - [模板方法模式](#模板方法模式)
     - [经典实现](#经典实现-2)
     - [应用场景](#应用场景-2)
+- [代理模式](#代理模式)
+    - [经典实现](#经典实现-3)
+    - [应用场景](#应用场景-3)
 - [参考](#参考)
 
 <!-- /TOC -->
@@ -78,6 +81,30 @@
 真实世界的用例：
 
 1. [org.apache.catalina.util.LifecycleBase#start()](https://tomcat.apache.org/tomcat-8.0-doc/api/org/apache/catalina/util/LifecycleBase.html#start()) + [org.apache.catalina.core.StandardContext#startInternal()](https://tomcat.apache.org/tomcat-8.0-doc/api/org/apache/catalina/core/StandardContext.htmlstartInternal())
+
+## 代理模式
+
+### 经典实现
+
+1. [经典代理实现](./src/main/java/me/rainstorm/patterns/proxy/SubjectProxy.java)
+2. [基于 JDK 动态代理](./src/main/java/me/rainstorm/patterns/proxy/SubjectInvocationHandler.java)
+3. [基于 cglib 动态代理](./src/main/java/me/rainstorm/patterns/proxy/SubjectMethodInterceptor.java)
+
+### 应用场景
+
+经典应用场景
+
+1. 对另外对象的控制访问
+1. 延迟初始化
+1. 日志
+1. 对象引用计数
+
+现实世界的用例
+
+1. [java.lang.reflect.Proxy](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Proxy.html)
+1. [Apache Commons Proxy](https://commons.apache.org/proper/commons-proxy/)
+1. Mocking frameworks Mockito, Powermock, EasyMock
+
 
 ## 参考
 
