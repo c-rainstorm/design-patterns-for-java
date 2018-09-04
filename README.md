@@ -24,6 +24,9 @@
 - [代理模式](#代理模式)
     - [经典实现](#经典实现-3)
     - [应用场景](#应用场景-3)
+- [原型模式](#原型模式)
+    - [经典实现](#经典实现-4)
+    - [应用场景](#应用场景-4)
 - [参考](#参考)
 
 <!-- /TOC -->
@@ -105,6 +108,18 @@
 1. [Apache Commons Proxy](https://commons.apache.org/proper/commons-proxy/)
 1. Mocking frameworks Mockito, Powermock, EasyMock
 
+## 原型模式
+
+### 经典实现
+
+1. [经典原型模式](./src/main/java/me/rainstorm/patterns/prototype/Prototype.java)
+
+### 应用场景
+
+经典应用场景
+
+1. 资源优化场景。字节流拷贝，优化类初始化需要消耗资源比较多的情况
+1. 避免并发问题。
 
 ## 参考
 
